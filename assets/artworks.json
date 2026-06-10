@@ -1,0 +1,190 @@
+[
+  {
+    "id": "harvest-check",
+    "title": {
+      "uk": "Перевірка врожаю",
+      "he": "בדיקת יבולים",
+      "ru": "Проверка урожая",
+      "en": "Harvest Check"
+    },
+    "description": {
+      "uk": "Диптих із двох невеликих ілюстративних картин про птахів і врожай.",
+      "he": "דיפטיך של שני ציורים קטנים בסגנון איורי על ציפורים ויבולים.",
+      "ru": "Диптих из двух небольших иллюстративных картин о птицах и урожае.",
+      "en": "A diptych of two small illustration-style paintings about birds and harvest."
+    },
+    "technique": {
+      "uk": "2 картини по 20x20 см. Стиль - ілюстрація. Акрил",
+      "he": "2 ציורים, 20x20 ס״מ כל אחד. סגנון איורי. אקריליק",
+      "ru": "2 картины по 20x20 см. Стиль - иллюстрации. Акрил",
+      "en": "Two paintings, 20x20 cm each. Illustration style. Acrylic"
+    },
+    "image": "assets/artworks/harvest-check/main.jpeg",
+    "pieces": [
+      "assets/artworks/harvest-check/pieces/01.jpeg",
+      "assets/artworks/harvest-check/pieces/02.jpeg"
+    ],
+    "history": [
+      "assets/artworks/harvest-check/main.jpeg",
+      "assets/artworks/while-no-one-sees/main.jpeg",
+      "assets/artworks/little-thief/main.jpeg",
+      "assets/artworks/originals/01-harvest-check.jpeg",
+      "assets/artworks/originals/02-while-no-one-sees.jpeg",
+      "assets/artworks/originals/03-little-thief.jpeg"
+    ]
+  },
+  {
+    "id": "while-no-one-sees",
+    "title": {
+      "uk": "Поки ніхто не бачить",
+      "he": "כשאף אחד לא רואה",
+      "ru": "Пока никто не видит",
+      "en": "While No One Sees"
+    },
+    "description": {
+      "uk": "Натюрморт із тихим моментом спостереження і маленькою присутністю птаха.",
+      "he": "טבע דומם עם רגע שקט של התבוננות ונוכחות קטנה של ציפור.",
+      "ru": "Натюрморт с тихим моментом наблюдения и маленьким присутствием птицы.",
+      "en": "A still life with a quiet moment of watching and a small bird presence."
+    },
+    "technique": {
+      "uk": "Натюрморт 25x25 см. Акрил",
+      "he": "טבע דומם 25x25 ס״מ. אקריליק",
+      "ru": "Натюрморт 25x25 см. Акрил",
+      "en": "Still life, 25x25 cm. Acrylic"
+    },
+    "image": "assets/artworks/while-no-one-sees/main.jpeg",
+    "history": [
+      "assets/artworks/harvest-check/main.jpeg",
+      "assets/artworks/while-no-one-sees/main.jpeg",
+      "assets/artworks/little-thief/main.jpeg",
+      "assets/artworks/originals/01-harvest-check.jpeg",
+      "assets/artworks/originals/02-while-no-one-sees.jpeg",
+      "assets/artworks/originals/03-little-thief.jpeg"
+    ]
+  },
+  {
+    "id": "little-thief",
+    "title": {
+      "uk": "Маленький злодій",
+      "he": "הגנב הקטן",
+      "ru": "Маленький воришка",
+      "en": "The Little Thief"
+    },
+    "description": {
+      "uk": "Декоративна робота з грайливим образом маленького птаха-злодія.",
+      "he": "ציור דקורטיבי עם דמות שובבה של ציפור קטנה וגנבת.",
+      "ru": "Декоративная работа с игривым образом маленькой птицы-воришки.",
+      "en": "A decorative painting with a playful image of a small bird thief."
+    },
+    "technique": {
+      "uk": "Декоративний живопис 25x25 см. Акрил",
+      "he": "ציור דקורטיבי 25x25 ס״מ. אקריליק",
+      "ru": "Декоративная живопись 25x25 см. Акрил",
+      "en": "Decorative painting, 25x25 cm. Acrylic"
+    },
+    "image": "assets/artworks/little-thief/main.jpeg",
+    "history": [
+      "assets/artworks/harvest-check/main.jpeg",
+      "assets/artworks/while-no-one-sees/main.jpeg",
+      "assets/artworks/little-thief/main.jpeg",
+      "assets/artworks/originals/01-harvest-check.jpeg",
+      "assets/artworks/originals/02-while-no-one-sees.jpeg",
+      "assets/artworks/originals/03-little-thief.jpeg"
+    ]
+  },
+  {
+    "id": "blue-memory-triptych",
+    "title": {
+      "uk": "Синя пам'ять",
+      "he": "זיכרון כחול",
+      "ru": "Синяя память",
+      "en": "Blue Memory"
+    },
+    "description": {
+      "uk": "Триптих про пам'ять, тишу і світло, що проходить крізь сині відтінки.",
+      "he": "טריפטיך על זיכרון, שקט ואור שעובר דרך גוונים כחולים.",
+      "ru": "Триптих о памяти, тишине и свете, проходящем через синие оттенки.",
+      "en": "A triptych about memory, quiet, and light moving through blue tones."
+    },
+    "technique": {
+      "uk": "Триптих. Змішана техніка",
+      "he": "טריפטיך. טכניקה מעורבת",
+      "ru": "Триптих. Смешанная техника",
+      "en": "Triptych. Mixed media"
+    },
+    "createdAt": "2024-02-01",
+    "image": "assets/artworks/blue-memory-triptych/main.png",
+    "pieces": [
+      "assets/artworks/blue-memory-triptych/pieces/01.png",
+      "assets/artworks/blue-memory-triptych/pieces/02.png",
+      "assets/artworks/blue-memory-triptych/pieces/03.png"
+    ],
+    "history": [
+      "assets/artworks/blue-memory-triptych/history/01.png",
+      "assets/artworks/blue-memory-triptych/history/02.png"
+    ]
+  },
+  {
+    "id": "sunflowers-hope",
+    "title": {
+      "uk": "Соняхи на підвіконні",
+      "he": "חמניות על אדן החלון",
+      "ru": "Подсолнухи на подоконнике",
+      "en": "Sunflowers on the Windowsill"
+    },
+    "description": {
+      "uk": "Теплий натюрморт про дім, очікування і маленькі джерела сили.",
+      "he": "טבע דומם חם על בית, המתנה ומקורות קטנים של כוח.",
+      "ru": "Теплый натюрморт о доме, ожидании и маленьких источниках силы.",
+      "en": "A warm still life about home, waiting, and small sources of strength."
+    },
+    "technique": {
+      "uk": "Акрил на полотні",
+      "he": "אקריליק על בד",
+      "ru": "Акрил на холсте",
+      "en": "Acrylic on canvas"
+    },
+    "createdAt": "2024-04-12",
+    "image": "assets/artworks/sunflowers-hope/main.png",
+    "price": "₪1,200",
+    "history": [
+      "assets/artworks/sunflowers-hope/history/01.png",
+      "assets/artworks/sunflowers-hope/history/02.png",
+      "assets/artworks/sunflowers-hope/history/03.png",
+      "assets/artworks/sunflowers-hope/history/04.png",
+      "assets/artworks/sunflowers-hope/history/05.png",
+      "assets/artworks/sunflowers-hope/history/06.png",
+      "assets/artworks/sunflowers-hope/history/07.png",
+      "assets/artworks/sunflowers-hope/history/08.png"
+    ]
+  },
+  {
+    "id": "window-light",
+    "title": {
+      "uk": "Світло у вікні",
+      "he": "אור בחלון",
+      "ru": "Свет в окне",
+      "en": "Light in the Window"
+    },
+    "description": {
+      "uk": "Робота про вечірню тишу, листи без відповіді і надію, яка все ще світиться.",
+      "he": "עבודה על שקט של ערב, מכתבים ללא תשובה ותקווה שעדיין מאירה.",
+      "ru": "Работа о вечерней тишине, письмах без ответа и надежде, которая все еще светится.",
+      "en": "A work about evening quiet, unanswered letters, and hope that still glows."
+    },
+    "technique": {
+      "uk": "Змішана техніка",
+      "he": "טכניקה מעורבת",
+      "ru": "Смешанная техника",
+      "en": "Mixed media"
+    },
+    "createdAt": "2023-11-18",
+    "image": "assets/artworks/window-light/main.png",
+    "pieces": [
+      "assets/artworks/window-light/pieces/01.png",
+      "assets/artworks/window-light/pieces/02.png",
+      "assets/artworks/window-light/pieces/03.png"
+    ]
+  }
+]

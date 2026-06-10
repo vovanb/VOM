@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="uk" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Мистецтво, що тримає світло</title>
+    <meta name="description" content="Особиста галерея картин, створених як спосіб пережити війну, розлуку і триматися за світло.">
+    <link rel="canonical" href="https://example.github.io/VOM/">
+    <link rel="alternate" hreflang="uk" href="https://example.github.io/VOM/?lang=uk">
+    <link rel="alternate" hreflang="he" href="https://example.github.io/VOM/?lang=he">
+    <link rel="alternate" hreflang="ru" href="https://example.github.io/VOM/?lang=ru">
+    <link rel="alternate" hreflang="en" href="https://example.github.io/VOM/?lang=en">
+    <link rel="alternate" hreflang="x-default" href="https://example.github.io/VOM/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Мистецтво, що тримає світло">
+    <meta property="og:title" content="Мистецтво, що тримає світло">
+    <meta property="og:description" content="Особиста галерея картин, створених як спосіб пережити війну, розлуку і триматися за світло.">
+    <meta property="og:url" content="https://example.github.io/VOM/">
+    <meta property="og:image" content="https://example.github.io/VOM/assets/social-preview.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="uk_UA">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Мистецтво, що тримає світло">
+    <meta name="twitter:description" content="Особиста галерея картин, створених як спосіб пережити війну, розлуку і триматися за світло.">
+    <meta name="twitter:image" content="https://example.github.io/VOM/assets/social-preview.png">
+
+    <meta name="theme-color" content="#0f766e">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#gallery">Skip to gallery</a>
+    <header class="site-header">
+      <nav class="topbar" aria-label="Primary">
+        <a class="brand" href="#gallery" data-brand>
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span data-i18n="siteName">Мистецтво, що тримає світло</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only" data-i18n="menu">Menu</span>
+        </button>
+        <div class="nav-panel" id="site-nav" data-nav-panel>
+          <a href="#gallery" data-nav-link data-i18n="navGallery">Галерея</a>
+          <a href="#about" data-nav-link data-i18n="navAbout">Про художницю</a>
+          <a href="#contact" data-nav-link data-i18n="navContact">Контакти</a>
+          <label class="language-picker">
+            <span class="sr-only" data-i18n="language">Language</span>
+            <select data-language-select aria-label="Language">
+              <option value="uk">Українська</option>
+              <option value="he">עברית</option>
+              <option value="ru">Русский</option>
+              <option value="en">English</option>
+            </select>
+          </label>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="heroEyebrow">Особиста галерея</p>
+          <h1 id="hero-title" data-i18n="heroTitle">Картини про пам'ять, дім і світло</h1>
+          <p data-i18n="heroText">Роботи, створені в час війни, розлуки з батьками в Україні та життя в Ізраїлі після 7 жовтня.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#gallery" data-i18n="viewGallery">Дивитися роботи</a>
+            <a class="button secondary" href="#about" data-i18n="readStory">Прочитати історію</a>
+          </div>
+        </div>
+        <img class="hero-image" src="assets/social-preview.png" alt="" data-social-preview>
+      </section>
+
+      <section class="section" id="gallery" aria-labelledby="gallery-title">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="galleryEyebrow">Галерея</p>
+          <h2 id="gallery-title" data-i18n="galleryTitle">Вибрані роботи</h2>
+        </div>
+        <div class="gallery" data-gallery aria-live="polite"></div>
+      </section>
+
+      <section class="section about-band" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="aboutEyebrow">Про художницю</p>
+          <h2 id="about-title" data-i18n="aboutTitle">Коли слова не витримують, приходить колір</h2>
+        </div>
+        <div class="text-column" data-about-text></div>
+      </section>
+
+      <section class="section contact-band" id="contact" aria-labelledby="contact-title">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="contactEyebrow">Контакти</p>
+          <h2 id="contact-title" data-i18n="contactTitle">Запитати про роботу</h2>
+        </div>
+        <p class="contact-intro" data-i18n="contactText">Напишіть, якщо хочете дізнатися більше про картину або придбати роботу.</p>
+        <div class="contact-links" data-contact-links></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p data-footer></p>
+    </footer>
+
+    <dialog class="art-dialog" data-art-dialog aria-labelledby="dialog-title">
+      <button class="dialog-close" type="button" data-dialog-close aria-label="Close">&times;</button>
+      <article class="art-detail" data-art-detail></article>
+    </dialog>
+  </body>
+</html>

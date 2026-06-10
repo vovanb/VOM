@@ -1,0 +1,264 @@
+{
+  "siteUrl": "https://example.github.io/VOM/",
+  "artistName": {
+    "uk": "Ім'я художниці",
+    "he": "שם האמנית",
+    "ru": "Имя художницы",
+    "en": "Artist name"
+  },
+  "seo": {
+    "title": {
+      "uk": "Мистецтво, що тримає світло",
+      "he": "אמנות שמחזיקה אור",
+      "ru": "Искусство, которое держит свет",
+      "en": "Art That Holds the Light"
+    },
+    "description": {
+      "uk": "Особиста галерея картин, створених як спосіб пережити війну, розлуку і триматися за світло.",
+      "he": "גלריה אישית של ציורים שנוצרו כדרך לעבור מלחמה, פרידה ודאגה, ולהחזיק אור.",
+      "ru": "Личная галерея картин, созданных как способ пережить войну, разлуку и сохранить свет.",
+      "en": "A personal gallery of paintings created as a way to live through war, separation, and keep hold of light."
+    },
+    "previewImage": "assets/social-preview.png"
+  },
+  "ui": {
+    "siteName": {
+      "uk": "Мистецтво, що тримає світло",
+      "he": "אמנות שמחזיקה אור",
+      "ru": "Искусство, которое держит свет",
+      "en": "Art That Holds the Light"
+    },
+    "menu": {
+      "uk": "Меню",
+      "he": "תפריט",
+      "ru": "Меню",
+      "en": "Menu"
+    },
+    "language": {
+      "uk": "Мова",
+      "he": "שפה",
+      "ru": "Язык",
+      "en": "Language"
+    },
+    "navGallery": {
+      "uk": "Галерея",
+      "he": "גלריה",
+      "ru": "Галерея",
+      "en": "Gallery"
+    },
+    "navAbout": {
+      "uk": "Про художницю",
+      "he": "על האמנית",
+      "ru": "О художнице",
+      "en": "About"
+    },
+    "navContact": {
+      "uk": "Контакти",
+      "he": "צור קשר",
+      "ru": "Контакты",
+      "en": "Contact"
+    },
+    "heroEyebrow": {
+      "uk": "Особиста галерея",
+      "he": "גלריה אישית",
+      "ru": "Личная галерея",
+      "en": "Personal gallery"
+    },
+    "heroTitle": {
+      "uk": "Картини про пам'ять, дім і світло",
+      "he": "ציורים על זיכרון, בית ואור",
+      "ru": "Картины о памяти, доме и свете",
+      "en": "Paintings about memory, home, and light"
+    },
+    "heroText": {
+      "uk": "Роботи, створені в час війни, розлуки з батьками в Україні та життя в Ізраїлі після 7 жовтня.",
+      "he": "עבודות שנוצרו בזמן מלחמה, ריחוק מההורים באוקראינה וחיים בישראל אחרי 7 באוקטובר.",
+      "ru": "Работы, созданные во время войны, разлуки с родителями в Украине и жизни в Израиле после 7 октября.",
+      "en": "Works created during war, separation from parents in Ukraine, and life in Israel after October 7."
+    },
+    "viewGallery": {
+      "uk": "Дивитися роботи",
+      "he": "לצפות בעבודות",
+      "ru": "Смотреть работы",
+      "en": "View works"
+    },
+    "readStory": {
+      "uk": "Прочитати історію",
+      "he": "לקרוא את הסיפור",
+      "ru": "Прочитать историю",
+      "en": "Read the story"
+    },
+    "galleryEyebrow": {
+      "uk": "Галерея",
+      "he": "גלריה",
+      "ru": "Галерея",
+      "en": "Gallery"
+    },
+    "galleryTitle": {
+      "uk": "Вибрані роботи",
+      "he": "עבודות נבחרות",
+      "ru": "Избранные работы",
+      "en": "Selected works"
+    },
+    "aboutEyebrow": {
+      "uk": "Про художницю",
+      "he": "על האמנית",
+      "ru": "О художнице",
+      "en": "About the artist"
+    },
+    "aboutTitle": {
+      "uk": "Коли слова не витримують, приходить колір",
+      "he": "כשהמילים לא מספיקות, הצבע מגיע",
+      "ru": "Когда слова не выдерживают, приходит цвет",
+      "en": "When words cannot carry it, color arrives"
+    },
+    "contactEyebrow": {
+      "uk": "Контакти",
+      "he": "צור קשר",
+      "ru": "Контакты",
+      "en": "Contact"
+    },
+    "contactTitle": {
+      "uk": "Запитати про роботу",
+      "he": "לשאול על עבודה",
+      "ru": "Спросить о работе",
+      "en": "Ask about a work"
+    },
+    "contactText": {
+      "uk": "Напишіть, якщо хочете дізнатися більше про картину або придбати роботу.",
+      "he": "כתבו אם תרצו לדעת יותר על ציור או לרכוש עבודה.",
+      "ru": "Напишите, если хотите узнать больше о картине или приобрести работу.",
+      "en": "Write if you would like to know more about a painting or purchase a work."
+    },
+    "artworkEyebrow": {
+      "uk": "Деталі роботи",
+      "he": "פרטי העבודה",
+      "ru": "Детали работы",
+      "en": "Artwork details"
+    },
+    "techniqueLabel": {
+      "uk": "Техніка",
+      "he": "טכניקה",
+      "ru": "Техника",
+      "en": "Technique"
+    },
+    "priceLabel": {
+      "uk": "Ціна",
+      "he": "מחיר",
+      "ru": "Цена",
+      "en": "Price"
+    },
+    "dateLabel": {
+      "uk": "Дата",
+      "he": "תאריך",
+      "ru": "Дата",
+      "en": "Date"
+    },
+    "viewDetails": {
+      "uk": "Деталі",
+      "he": "פרטים",
+      "ru": "Детали",
+      "en": "Details"
+    },
+    "viewHistory": {
+      "uk": "Історія",
+      "he": "תהליך",
+      "ru": "История",
+      "en": "History"
+    },
+    "noHistory": {
+      "uk": "Без історії",
+      "he": "אין תהליך",
+      "ru": "Без истории",
+      "en": "No history"
+    },
+    "contactAboutArtwork": {
+      "uk": "Запитати про цю роботу",
+      "he": "לשאול על העבודה הזו",
+      "ru": "Спросить об этой работе",
+      "en": "Ask about this work"
+    },
+    "shareWhatsapp": {
+      "uk": "Поділитися у WhatsApp",
+      "he": "שיתוף ב-WhatsApp",
+      "ru": "Поделиться в WhatsApp",
+      "en": "Share on WhatsApp"
+    },
+    "shareMessage": {
+      "uk": "Подивіться на цю роботу:",
+      "he": "תראו את העבודה הזו:",
+      "ru": "Посмотрите эту работу:",
+      "en": "Look at this artwork:"
+    },
+    "historyTitle": {
+      "uk": "Історія створення",
+      "he": "תהליך היצירה",
+      "ru": "История создания",
+      "en": "Creation process"
+    },
+    "piecesTitle": {
+      "uk": "Частини роботи",
+      "he": "חלקי היצירה",
+      "ru": "Части работы",
+      "en": "Artwork pieces"
+    },
+    "pieceLabel": {
+      "uk": "Частина",
+      "he": "חלק",
+      "ru": "Часть",
+      "en": "Piece"
+    },
+    "stepLabel": {
+      "uk": "Крок",
+      "he": "שלב",
+      "ru": "Шаг",
+      "en": "Step"
+    },
+    "previous": {
+      "uk": "Попереднє",
+      "he": "הקודם",
+      "ru": "Предыдущее",
+      "en": "Previous"
+    },
+    "next": {
+      "uk": "Наступне",
+      "he": "הבא",
+      "ru": "Следующее",
+      "en": "Next"
+    },
+    "footerText": {
+      "uk": "Усі права захищено.",
+      "he": "כל הזכויות שמורות.",
+      "ru": "Все права защищены.",
+      "en": "All rights reserved."
+    }
+  },
+  "about": {
+    "uk": "Ця галерея народилася з дуже особистого часу. Війна Росії проти України залишила батьків художниці заблокованими далеко від неї, без можливості просто приїхати, обійняти і побути поруч.\nПісля нападу ХАМАС на Ізраїль 7 жовтня 2023 року тривога отримала ще один вимір. Малювання стало способом дихати, пам'ятати, не втратити ніжність і перетворювати біль на колір.\nКожна робота тут не є гучною заявою. Це маленьке місце, де страх, любов, дім і надія можуть співіснувати.",
+    "he": "הגלריה הזו נולדה מתקופה אישית מאוד. המלחמה של רוסיה נגד אוקראינה השאירה את הוריה של האמנית רחוקים ממנה, בלי אפשרות פשוט להגיע, לחבק ולהיות יחד.\nאחרי מתקפת חמאס על ישראל ב-7 באוקטובר 2023, החרדה קיבלה ממד נוסף. הציור הפך לדרך לנשום, לזכור, לשמור על רכות ולהפוך כאב לצבע.\nכל עבודה כאן אינה הצהרה רועשת. זהו מקום קטן שבו פחד, אהבה, בית ותקווה יכולים להתקיים יחד.",
+    "ru": "Эта галерея родилась из очень личного времени. Война России против Украины оставила родителей художницы далеко от нее, без возможности просто приехать, обнять и побыть рядом.\nПосле нападения ХАМАС на Израиль 7 октября 2023 года тревога получила еще одно измерение. Живопись стала способом дышать, помнить, не потерять нежность и превращать боль в цвет.\nКаждая работа здесь не является громким заявлением. Это маленькое место, где страх, любовь, дом и надежда могут существовать вместе.",
+    "en": "This gallery was born from a deeply personal time. Russia's war against Ukraine left the artist's parents far away and unreachable, without the simple possibility of visiting, embracing, and being together.\nAfter the Hamas attack on Israel on October 7, 2023, anxiety gained another layer. Painting became a way to breathe, remember, protect tenderness, and turn pain into color.\nEach work here is not a loud statement. It is a small place where fear, love, home, and hope can exist together."
+  },
+  "contact": [
+    {
+      "label": {
+        "uk": "Email",
+        "he": "אימייל",
+        "ru": "Email",
+        "en": "Email"
+      },
+      "href": "mailto:artist@example.com",
+      "icon": "email"
+    },
+    {
+      "label": {
+        "uk": "WhatsApp",
+        "he": "WhatsApp",
+        "ru": "WhatsApp",
+        "en": "WhatsApp"
+      },
+      "href": "https://wa.me/972503779955?text=I%20am%20interesting%20in%20Oxana%27s%20drawing",
+      "icon": "whatsapp"
+    }
+  ]
+}
