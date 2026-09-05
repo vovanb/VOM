@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Local Artwork Editor</title>
+    <link rel="stylesheet" href="admin.css">
+    <script src="admin.js" defer></script>
+  </head>
+  <body>
+    <main class="admin-shell">
+      <header class="admin-header">
+        <div>
+          <p class="eyebrow">Local only</p>
+          <h1>Artwork Editor</h1>
+          <p class="intro">Add paintings, translations, pricing, dates, pieces, and history images. Saving writes into <code>assets/artworks.json</code> and <code>assets/artworks/</code> only when this project runs locally.</p>
+        </div>
+        <a class="site-link" href="/">View site</a>
+      </header>
+
+      <section class="local-warning" data-local-warning hidden>
+        <h2>Admin editor is disabled on the public site</h2>
+        <p>GitHub Pages is static and cannot write files. Run <code>node local-server.js</code> locally and open <code>http://127.0.0.1:4173/admin.html</code>.</p>
+      </section>
+
+      <section class="editor-grid" data-editor>
+        <aside class="artwork-list">
+          <div class="list-head">
+            <h2>Artworks</h2>
+            <button type="button" data-new-artwork>New</button>
+          </div>
+          <div data-artwork-list></div>
+        </aside>
+
+        <form class="editor-form" data-artwork-form>
+          <input type="hidden" name="existingId">
+
+          <div class="form-actions">
+            <button class="primary" type="submit">Save artwork</button>
+            <button class="secondary-action" type="button" data-reset-artwork>Cancel / reset changes</button>
+            <p data-status role="status"></p>
+          </div>
+
+          <section class="form-section">
+            <h2>Artwork</h2>
+            <label>
+              ID
+              <input name="id" required placeholder="my-artwork-id">
+            </label>
+            <label>
+              Created month
+              <input name="createdAt" type="month">
+            </label>
+          </section>
+
+          <section class="form-section">
+            <h2>Images</h2>
+            <div class="image-field">
+              <div class="field-head">
+                <h3>Main image</h3>
+                <span>Single path</span>
+              </div>
+              <div class="thumb-strip" data-main-thumbs></div>
+              <label>
+                Main image path
+                <input name="image" placeholder="assets/artworks/example/main.jpg">
+              </label>
+              <label>
+                Replace/upload main image
+                <input name="main" type="file" accept="image/*">
+              </label>
+            </div>
+
+            <div class="image-field">
+              <div class="field-head">
+                <h3>Diptych/triptych pieces</h3>
+                <span>One path per line</span>
+              </div>
+              <div class="thumb-strip" data-pieces-thumbs></div>
+              <label>
+                Pieces paths
+                <textarea name="piecesPaths" placeholder="assets/artworks/example/pieces/01.jpg&#10;assets/artworks/example/pieces/02.jpg"></textarea>
+              </label>
+              <label>
+                Replace/upload pieces
+                <input name="pieces" type="file" accept="image/*" multiple>
+              </label>
+            </div>
+
+            <div class="image-field">
+              <div class="field-head">
+                <h3>History images</h3>
+                <span>One path per line</span>
+              </div>
+              <div class="thumb-strip" data-history-thumbs></div>
+              <label>
+                History paths
+                <textarea name="historyPaths" placeholder="assets/artworks/example/history/01.jpg&#10;assets/artworks/example/history/02.jpg"></textarea>
+              </label>
+              <label>
+                Replace/upload history images
+                <input name="history" type="file" accept="image/*" multiple>
+              </label>
+            </div>
+            <p class="hint">Path fields edit the JSON directly. Upload fields replace the corresponding paths with newly saved files.</p>
+          </section>
+
+          <section class="form-section price-section">
+            <h2>Price / status</h2>
+            <div class="price-grid" data-price-fields></div>
+            <p class="hint">Use free text: price, Sold, On request, or leave empty.</p>
+          </section>
+
+          <section class="form-section">
+            <h2>Advanced JSON</h2>
+            <label>
+              Extra JSON fields
+              <textarea name="extraJson" spellcheck="false" placeholder="{&#10;  &quot;customField&quot;: &quot;value&quot;&#10;}"></textarea>
+            </label>
+            <p class="hint">Optional. Use this for any custom fields not shown above. Core fields from the form win if the same key appears here.</p>
+          </section>
+
+          <section class="form-section translations">
+            <h2>Translations</h2>
+            <div data-language-fields></div>
+          </section>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

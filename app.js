@@ -6,6 +6,7 @@ let site = null;
 let artworks = [];
 let currentLang = DEFAULT_LANG;
 let historyAutoScrollTimer = null;
+let historyFrameTimer = null;
 
 const nodes = {
   gallery: document.querySelector("[data-gallery]"),
@@ -57,7 +58,7 @@ function updateMeta() {
   const title = translate(seo.title);
   const description = translate(seo.description);
   const siteUrl = site.siteUrl || window.location.href.split("#")[0];
-  const preview = new URL(seo.previewImage || "assets/social-preview.png", siteUrl).href;
+  const preview = new URL(seo.previewImage || "assets/social-preview.jpg", siteUrl).href;
 
   document.title = title;
   setMeta("name", "description", description);
@@ -195,19 +196,26 @@ function openArtwork(id, options = {}) {
         </div>
       </section>`
     : "";
-  const history = Array.isArray(artwork.history) ? artwork.history : [];
-  const historyBlock = history.length
+  const historyFrames = Array.isArray(artwork.history) ? artwork.history : [];
+  const historyBlock = historyFrames.length
     ? `
       <section class="history-section" aria-labelledby="history-title">
         <div class="history-head">
           <h3 id="history-title">${escapeHtml(text("historyTitle"))}</h3>
           <div class="history-controls">
+            <button class="icon-button animation-button" type="button" data-history-play aria-label="${escapeAttribute(text("playHistoryAnimation"))}" aria-pressed="false">
+              ${iconSvg("animation")}
+            </button>
             <button class="icon-button" type="button" data-slide-prev aria-label="${escapeAttribute(text("previous"))}">&#8592;</button>
             <button class="icon-button" type="button" data-slide-next aria-label="${escapeAttribute(text("next"))}">&#8594;</button>
           </div>
         </div>
+        <figure class="history-stage" data-history-stage>
+          <img src="${escapeAttribute(historyFrames[0])}" alt="${escapeAttribute(`${text("stepLabel")} 1`)}" data-history-stage-image>
+          <figcaption data-history-stage-caption>${escapeHtml(text("stepLabel"))} 1 / ${historyFrames.length}</figcaption>
+        </figure>
         <div class="history-track" data-history-track>
-          ${history.map((src, index) => `
+          ${historyFrames.map((src, index) => `
             <figure>
               <img src="${escapeAttribute(src)}" alt="${escapeAttribute(`${text("stepLabel")} ${index + 1}`)}" loading="lazy">
               <figcaption>${escapeHtml(text("stepLabel"))} ${index + 1}</figcaption>
@@ -255,6 +263,7 @@ function openArtwork(id, options = {}) {
 
 function closeArtwork() {
   stopHistoryAutoScroll();
+  stopHistoryFrameAnimation();
   nodes.dialog.close();
   const url = new URL(window.location.href);
   url.searchParams.delete("artwork");
@@ -264,9 +273,29 @@ function closeArtwork() {
 
 function setupHistoryControls() {
   stopHistoryAutoScroll();
+  stopHistoryFrameAnimation();
   const track = nodes.artDetail.querySelector("[data-history-track]");
   if (!track) return;
+  const frames = [...track.querySelectorAll("img")].map((image) => image.getAttribute("src"));
+  let activeFrame = 0;
   const step = () => Math.max(220, Math.floor(track.clientWidth * 0.75));
+
+  const showFrame = (index) => {
+    if (!frames.length) return;
+    activeFrame = (index + frames.length) % frames.length;
+    const stage = nodes.artDetail.querySelector("[data-history-stage]");
+    const stageImage = nodes.artDetail.querySelector("[data-history-stage-image]");
+    const stageCaption = nodes.artDetail.querySelector("[data-history-stage-caption]");
+    if (!stage || !stageImage || !stageCaption) return;
+
+    stage.classList.remove("is-animating");
+    stageImage.src = frames[activeFrame];
+    stageImage.alt = `${text("stepLabel")} ${activeFrame + 1}`;
+    stageCaption.textContent = `${text("stepLabel")} ${activeFrame + 1} / ${frames.length}`;
+    void stage.offsetWidth;
+    window.requestAnimationFrame(() => stage.classList.add("is-animating"));
+  };
+
   nodes.artDetail.querySelector("[data-slide-prev]")?.addEventListener("click", () => {
     stopHistoryAutoScroll();
     track.scrollBy({ left: -step(), behavior: "smooth" });
@@ -275,6 +304,17 @@ function setupHistoryControls() {
     stopHistoryAutoScroll();
     track.scrollBy({ left: step(), behavior: "smooth" });
   });
+  nodes.artDetail.querySelector("[data-history-play]")?.addEventListener("click", (event) => {
+    stopHistoryAutoScroll();
+    toggleHistoryFrameAnimation(event.currentTarget, () => showFrame(activeFrame + 1));
+  });
+  track.addEventListener("click", (event) => {
+    const figure = event.target.closest("figure");
+    if (!figure) return;
+    stopHistoryFrameAnimation();
+    showFrame([...track.querySelectorAll("figure")].indexOf(figure));
+  });
+  showFrame(0);
   startHistoryAutoScroll(track, step);
 }
 
@@ -297,6 +337,27 @@ function stopHistoryAutoScroll() {
   if (!historyAutoScrollTimer) return;
   window.clearInterval(historyAutoScrollTimer);
   historyAutoScrollTimer = null;
+}
+
+function toggleHistoryFrameAnimation(button, showNextFrame) {
+  if (historyFrameTimer) {
+    stopHistoryFrameAnimation();
+    return;
+  }
+  button.setAttribute("aria-pressed", "true");
+  button.classList.add("is-playing");
+  showNextFrame();
+  historyFrameTimer = window.setInterval(showNextFrame, 1200);
+}
+
+function stopHistoryFrameAnimation() {
+  if (historyFrameTimer) {
+    window.clearInterval(historyFrameTimer);
+    historyFrameTimer = null;
+  }
+  const button = nodes.artDetail.querySelector("[data-history-play]");
+  button?.setAttribute("aria-pressed", "false");
+  button?.classList.remove("is-playing");
 }
 
 function escapeHtml(value) {
@@ -331,6 +392,13 @@ function iconSvg(icon) {
     return `
       <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
         <path d="M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 3.2V17h16V8.2l-7.4 5.1a1 1 0 0 1-1.1 0L4 8.2Zm1.2-1.2 6.8 4.7L18.8 7H5.2Z"></path>
+      </svg>
+    `;
+  }
+  if (icon === "animation") {
+    return `
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h7A2.5 2.5 0 0 1 16 5.5v7a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 4 12.5v-7Zm2.5-.6a.6.6 0 0 0-.6.6v7c0 .3.3.6.6.6h7c.3 0 .6-.3.6-.6v-7a.6.6 0 0 0-.6-.6h-7Zm2.3 2.2a.8.8 0 0 1 .8 0l3.1 1.8a.8.8 0 0 1 0 1.4l-3.1 1.8a.8.8 0 0 1-1.2-.7V7.8c0-.6.6-.9 1.2-.7ZM18 8.1c.5 0 .9.4.9.9v6.4a3.5 3.5 0 0 1-3.5 3.5H9c-.5 0-.9-.4-.9-.9s.4-.9.9-.9h6.4c.9 0 1.7-.8 1.7-1.7V9c0-.5.4-.9.9-.9Zm3 3.1c.5 0 .9.4.9.9v4.3a5.5 5.5 0 0 1-5.5 5.5h-4.3c-.5 0-.9-.4-.9-.9s.4-.9.9-.9h4.3a3.7 3.7 0 0 0 3.7-3.7v-4.3c0-.5.4-.9.9-.9Z"></path>
       </svg>
     `;
   }

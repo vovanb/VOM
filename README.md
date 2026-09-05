@@ -7,7 +7,23 @@ A no-build multilingual art portfolio for GitHub Pages.
 - Add paintings in `assets/artworks.json`.
 - Add or change site text, contact links, SEO text, and the GitHub Pages URL in `assets/site.json`.
 - Replace sample images under `assets/artworks/<artwork-id>/`.
-- Replace `assets/social-preview.png` with the image you want WhatsApp and social apps to show.
+- Replace `assets/social-preview.jpg` with the image you want WhatsApp and social apps to show.
+
+## Local admin editor
+
+GitHub Pages is static, so it cannot save uploads or edit JSON. To edit locally:
+
+```bash
+node local-server.js
+```
+
+Then open:
+
+```text
+http://127.0.0.1:4173/admin.html
+```
+
+The admin editor writes images into `assets/artworks/<artwork-id>/` and updates `assets/artworks.json`. It is not linked from the public site, and it disables itself when opened from a non-local host.
 
 ## Publish checklist
 

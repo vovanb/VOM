@@ -19,7 +19,7 @@
       "ru": "Личная галерея картин, созданных как способ пережить войну, разлуку и сохранить свет.",
       "en": "A personal gallery of paintings created as a way to live through war, separation, and keep hold of light."
     },
-    "previewImage": "assets/social-preview.png"
+    "previewImage": "assets/social-preview.jpg"
   },
   "ui": {
     "siteName": {
@@ -195,6 +195,12 @@
       "he": "תהליך היצירה",
       "ru": "История создания",
       "en": "Creation process"
+    },
+    "playHistoryAnimation": {
+      "uk": "Показати історію як анімацію",
+      "he": "להציג את התהליך כאנימציה",
+      "ru": "Показать историю как анимацию",
+      "en": "Show history as animation"
     },
     "piecesTitle": {
       "uk": "Частини роботи",

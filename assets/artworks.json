@@ -1,5 +1,96 @@
 [
   {
+    "id": "green-chameleon",
+    "title": {
+      "uk": "свій шлях",
+      "he": "דרך שלי",
+      "ru": "свой путь",
+      "en": "Your way"
+    },
+    "description": {
+      "uk": "",
+      "he": "",
+      "ru": "",
+      "en": ""
+    },
+    "technique": {
+      "uk": "Натюрморт 30x30 см. Акрил",
+      "he": "30x30 ס״מ. אקריליק",
+      "ru": "Натюрморт 30x30 см. Акрил",
+      "en": "Still life, 30x30 cm. Acrylic"
+    },
+    "image": "assets/artworks/green-chameleon/main.jpeg",
+    "createdAt": "2026-04-01",
+    "price": "On request",
+    "history": [
+      "assets/artworks/green-chameleon/history/01.jpeg",
+      "assets/artworks/green-chameleon/history/02.jpeg",
+      "assets/artworks/green-chameleon/history/03.jpeg",
+      "assets/artworks/green-chameleon/history/04.jpeg",
+      "assets/artworks/green-chameleon/history/05.jpeg",
+      "assets/artworks/green-chameleon/history/06.jpeg",
+      "assets/artworks/green-chameleon/history/07.jpeg"
+    ]
+  },
+  {
+    "id": "while-no-one-sees",
+    "title": {
+      "uk": "Поки ніхто не бачить",
+      "he": "כשאף אחד לא רואה",
+      "ru": "Пока никто не видит",
+      "en": "While No One Sees"
+    },
+    "description": {
+      "uk": "Натюрморт із тихим моментом спостереження і маленькою присутністю птаха.",
+      "he": "טבע דומם עם רגע שקט של התבוננות ונוכחות קטנה של ציפור.",
+      "ru": "Натюрморт с тихим моментом наблюдения и маленьким присутствием птицы.",
+      "en": "A still life with a quiet moment of watching and a small bird presence."
+    },
+    "technique": {
+      "uk": "Натюрморт 25x25 см. Акрил",
+      "he": "טבע דומם 25x25 ס״מ. אקריליק",
+      "ru": "Натюрморт 25x25 см. Акрил",
+      "en": "Still life, 25x25 cm. Acrylic"
+    },
+    "image": "assets/artworks/while-no-one-sees/main.jpeg",
+    "history": [
+      "assets/artworks/while-no-one-sees/history/01.jpeg",
+      "assets/artworks/while-no-one-sees/history/02.jpeg",
+      "assets/artworks/while-no-one-sees/history/03.jpeg",
+      "assets/artworks/while-no-one-sees/history/04.jpeg"
+    ],
+    "createdAt": "2026-03-01"
+  },
+  {
+    "id": "little-thief",
+    "title": {
+      "uk": "Маленький злодій",
+      "he": "הגנב הקטן",
+      "ru": "Маленький воришка",
+      "en": "The Little Thief"
+    },
+    "description": {
+      "uk": "Декоративна робота з грайливим образом маленького птаха-злодія.",
+      "he": "ציור דקורטיבי עם דמות שובבה של ציפור קטנה וגנבת.",
+      "ru": "Декоративная работа с игривым образом маленькой птицы-воришки.",
+      "en": "A decorative painting with a playful image of a small bird thief."
+    },
+    "technique": {
+      "uk": "Декоративний живопис 25x25 см. Акрил",
+      "he": "ציור דקורטיבי 25x25 ס״מ. אקריליק",
+      "ru": "Декоративная живопись 25x25 см. Акрил",
+      "en": "Decorative painting, 25x25 cm. Acrylic"
+    },
+    "image": "assets/artworks/little-thief/main.jpeg",
+    "history": [
+      "assets/artworks/little-thief/history/01.jpeg",
+      "assets/artworks/little-thief/history/02.jpeg",
+      "assets/artworks/little-thief/history/03.jpeg",
+      "assets/artworks/little-thief/history/04.jpeg",
+      "assets/artworks/little-thief/history/05.jpeg"
+    ]
+  },
+  {
     "id": "harvest-check",
     "title": {
       "uk": "Перевірка врожаю",
@@ -25,166 +116,406 @@
       "assets/artworks/harvest-check/pieces/02.jpeg"
     ],
     "history": [
-      "assets/artworks/harvest-check/main.jpeg",
-      "assets/artworks/while-no-one-sees/main.jpeg",
-      "assets/artworks/little-thief/main.jpeg",
-      "assets/artworks/originals/01-harvest-check.jpeg",
-      "assets/artworks/originals/02-while-no-one-sees.jpeg",
-      "assets/artworks/originals/03-little-thief.jpeg"
-    ]
+      "assets/artworks/harvest-check/pieces/history01/01.jpeg",
+      "assets/artworks/harvest-check/pieces/history01/02.jpeg",
+      "assets/artworks/harvest-check/pieces/history01/03.jpeg",
+      "assets/artworks/harvest-check/pieces/history02/01.jpeg",
+      "assets/artworks/harvest-check/pieces/history02/02.jpeg",
+      "assets/artworks/harvest-check/pieces/history02/03.jpeg"
+    ],
+    "createdAt": "2026-03-01"
   },
   {
-    "id": "while-no-one-sees",
+    "id": "cofee",
     "title": {
-      "uk": "Поки ніхто не бачить",
-      "he": "כשאף אחד לא רואה",
-      "ru": "Пока никто не видит",
-      "en": "While No One Sees"
+      "uk": "кавова історія",
+      "he": "היסטוריה של הקפה",
+      "ru": "кофейная история",
+      "en": "Coffee story"
     },
     "description": {
-      "uk": "Натюрморт із тихим моментом спостереження і маленькою присутністю птаха.",
-      "he": "טבע דומם עם רגע שקט של התבוננות ונוכחות קטנה של ציפור.",
-      "ru": "Натюрморт с тихим моментом наблюдения и маленьким присутствием птицы.",
-      "en": "A still life with a quiet moment of watching and a small bird presence."
+      "uk": "",
+      "he": "",
+      "ru": "",
+      "en": ""
     },
     "technique": {
-      "uk": "Натюрморт 25x25 см. Акрил",
-      "he": "טבע דומם 25x25 ס״מ. אקריליק",
-      "ru": "Натюрморт 25x25 см. Акрил",
-      "en": "Still life, 25x25 cm. Acrylic"
+      "uk": "Натюрморт 25x30 см. Акрил",
+      "he": "25x30 ס״מ. אקריליק",
+      "ru": "Натюрморт 25x30 см. Акрил",
+      "en": "Still life, 25x30 cm. Acrylic"
     },
-    "image": "assets/artworks/while-no-one-sees/main.jpeg",
-    "history": [
-      "assets/artworks/harvest-check/main.jpeg",
-      "assets/artworks/while-no-one-sees/main.jpeg",
-      "assets/artworks/little-thief/main.jpeg",
-      "assets/artworks/originals/01-harvest-check.jpeg",
-      "assets/artworks/originals/02-while-no-one-sees.jpeg",
-      "assets/artworks/originals/03-little-thief.jpeg"
-    ]
-  },
-  {
-    "id": "little-thief",
-    "title": {
-      "uk": "Маленький злодій",
-      "he": "הגנב הקטן",
-      "ru": "Маленький воришка",
-      "en": "The Little Thief"
-    },
-    "description": {
-      "uk": "Декоративна робота з грайливим образом маленького птаха-злодія.",
-      "he": "ציור דקורטיבי עם דמות שובבה של ציפור קטנה וגנבת.",
-      "ru": "Декоративная работа с игривым образом маленькой птицы-воришки.",
-      "en": "A decorative painting with a playful image of a small bird thief."
-    },
-    "technique": {
-      "uk": "Декоративний живопис 25x25 см. Акрил",
-      "he": "ציור דקורטיבי 25x25 ס״מ. אקריליק",
-      "ru": "Декоративная живопись 25x25 см. Акрил",
-      "en": "Decorative painting, 25x25 cm. Acrylic"
-    },
-    "image": "assets/artworks/little-thief/main.jpeg",
-    "history": [
-      "assets/artworks/harvest-check/main.jpeg",
-      "assets/artworks/while-no-one-sees/main.jpeg",
-      "assets/artworks/little-thief/main.jpeg",
-      "assets/artworks/originals/01-harvest-check.jpeg",
-      "assets/artworks/originals/02-while-no-one-sees.jpeg",
-      "assets/artworks/originals/03-little-thief.jpeg"
-    ]
-  },
-  {
-    "id": "blue-memory-triptych",
-    "title": {
-      "uk": "Синя пам'ять",
-      "he": "זיכרון כחול",
-      "ru": "Синяя память",
-      "en": "Blue Memory"
-    },
-    "description": {
-      "uk": "Триптих про пам'ять, тишу і світло, що проходить крізь сині відтінки.",
-      "he": "טריפטיך על זיכרון, שקט ואור שעובר דרך גוונים כחולים.",
-      "ru": "Триптих о памяти, тишине и свете, проходящем через синие оттенки.",
-      "en": "A triptych about memory, quiet, and light moving through blue tones."
-    },
-    "technique": {
-      "uk": "Триптих. Змішана техніка",
-      "he": "טריפטיך. טכניקה מעורבת",
-      "ru": "Триптих. Смешанная техника",
-      "en": "Triptych. Mixed media"
-    },
-    "createdAt": "2024-02-01",
-    "image": "assets/artworks/blue-memory-triptych/main.png",
+    "createdAt": "2026-09-01",
+    "image": "assets/artworks/cofee/main.jpeg",
     "pieces": [
-      "assets/artworks/blue-memory-triptych/pieces/01.png",
-      "assets/artworks/blue-memory-triptych/pieces/02.png",
-      "assets/artworks/blue-memory-triptych/pieces/03.png"
+      "assets/artworks/cofee/pieces/01.jpeg",
+      "assets/artworks/cofee/pieces/02.jpeg"
     ],
     "history": [
-      "assets/artworks/blue-memory-triptych/history/01.png",
-      "assets/artworks/blue-memory-triptych/history/02.png"
-    ]
+      "assets/artworks/cofee/pieces/history01/01.jpeg",
+      "assets/artworks/cofee/pieces/history01/02.jpeg",
+      "assets/artworks/cofee/pieces/history01/03.jpeg",
+      "assets/artworks/cofee/pieces/history02/01.jpeg",
+      "assets/artworks/cofee/pieces/history02/02.jpeg",
+      "assets/artworks/cofee/pieces/history02/03.jpeg",
+      "assets/artworks/cofee/pieces/history02/04.jpeg"
+    ],
+    "price": "on request"
   },
   {
-    "id": "sunflowers-hope",
+    "id": "fig",
     "title": {
-      "uk": "Соняхи на підвіконні",
-      "he": "חמניות על אדן החלון",
-      "ru": "Подсолнухи на подоконнике",
-      "en": "Sunflowers on the Windowsill"
+      "uk": "фіг",
+      "he": "תאנה",
+      "ru": "инжир",
+      "en": "Fig"
     },
     "description": {
-      "uk": "Теплий натюрморт про дім, очікування і маленькі джерела сили.",
-      "he": "טבע דומם חם על בית, המתנה ומקורות קטנים של כוח.",
-      "ru": "Теплый натюрморт о доме, ожидании и маленьких источниках силы.",
-      "en": "A warm still life about home, waiting, and small sources of strength."
+      "uk": "Фруктова серія",
+      "he": "סדרת פירות",
+      "ru": "Фруктовая серия",
+      "en": "Fruit series"
     },
     "technique": {
-      "uk": "Акрил на полотні",
-      "he": "אקריליק על בד",
-      "ru": "Акрил на холсте",
-      "en": "Acrylic on canvas"
+      "uk": "Натюрморт 20x20 см. Акрил",
+      "he": "20x20 ס״מ. אקריליק",
+      "ru": "Натюрморт 20x20 см. Акрил",
+      "en": "Still life, 20x20 cm. Acrylic"
     },
-    "createdAt": "2024-04-12",
-    "image": "assets/artworks/sunflowers-hope/main.png",
-    "price": "₪1,200",
-    "history": [
-      "assets/artworks/sunflowers-hope/history/01.png",
-      "assets/artworks/sunflowers-hope/history/02.png",
-      "assets/artworks/sunflowers-hope/history/03.png",
-      "assets/artworks/sunflowers-hope/history/04.png",
-      "assets/artworks/sunflowers-hope/history/05.png",
-      "assets/artworks/sunflowers-hope/history/06.png",
-      "assets/artworks/sunflowers-hope/history/07.png",
-      "assets/artworks/sunflowers-hope/history/08.png"
-    ]
-  },
-  {
-    "id": "window-light",
-    "title": {
-      "uk": "Світло у вікні",
-      "he": "אור בחלון",
-      "ru": "Свет в окне",
-      "en": "Light in the Window"
-    },
-    "description": {
-      "uk": "Робота про вечірню тишу, листи без відповіді і надію, яка все ще світиться.",
-      "he": "עבודה על שקט של ערב, מכתבים ללא תשובה ותקווה שעדיין מאירה.",
-      "ru": "Работа о вечерней тишине, письмах без ответа и надежде, которая все еще светится.",
-      "en": "A work about evening quiet, unanswered letters, and hope that still glows."
-    },
-    "technique": {
-      "uk": "Змішана техніка",
-      "he": "טכניקה מעורבת",
-      "ru": "Смешанная техника",
-      "en": "Mixed media"
-    },
-    "createdAt": "2023-11-18",
-    "image": "assets/artworks/window-light/main.png",
+    "createdAt": "2025-11-01",
+    "image": "assets/artworks/fig/main.jpeg",
+    "price": "On Request",
     "pieces": [
-      "assets/artworks/window-light/pieces/01.png",
-      "assets/artworks/window-light/pieces/02.png",
-      "assets/artworks/window-light/pieces/03.png"
+      "assets/artworks/fig/pieces/01.jpeg"
     ]
+  },
+  {
+    "id": "pumpkin",
+    "title": {
+      "uk": "гарбуз",
+      "he": "דְלַעַת",
+      "ru": "тыква",
+      "en": "pumkin"
+    },
+    "description": {
+      "uk": "Фруктова серія",
+      "he": "סדרת פירות",
+      "ru": "Фруктовая серия",
+      "en": "Fruit series"
+    },
+    "technique": {
+      "uk": "Натюрморт 20x20 см. Акрил",
+      "he": "20x20 ס״מ. אקריליק",
+      "ru": "Натюрморт 20x20 см. Акрил",
+      "en": "Still life, 20x20 cm. Acrylic"
+    },
+    "createdAt": "2025-11-01",
+    "image": "assets/artworks/pumkin/main.jpg",
+    "price": "On Request",
+    "pieces": [
+      "assets/artworks/pumkin/pieces/01.jpg"
+    ]
+  },
+  {
+    "id": "mandarin",
+    "title": {
+      "uk": "мандарин",
+      "he": "קלמנטינה",
+      "ru": "мандарин",
+      "en": "Mandarin"
+    },
+    "description": {
+      "uk": "Фруктова серія",
+      "he": "סידרה פירות",
+      "ru": "Фруктовая серия",
+      "en": "Fruits series"
+    },
+    "technique": {
+      "uk": "Натюрморт 20x20 см. Акрил",
+      "he": "20x20 ס״מ. אקריליק",
+      "ru": "Натюрморт 20x20 см. Акрил",
+      "en": "Still life, 20x20 cm. Acrylic"
+    },
+    "createdAt": "2026-05-01",
+    "image": "assets/artworks/mandarin/main.jpeg",
+    "history": [
+      "assets/artworks/mandarin/history/01.jpeg",
+      "assets/artworks/mandarin/history/02.jpeg",
+      "assets/artworks/mandarin/history/03.jpeg",
+      "assets/artworks/mandarin/history/04.jpeg"
+    ],
+    "pieces": [
+      "assets/artworks/mandarin/pieces/01.jpg"
+    ]
+  },
+  {
+    "id": "cherry",
+    "title": {
+      "uk": "вишня",
+      "he": "דובדבן",
+      "ru": "вишня",
+      "en": "cherry"
+    },
+    "description": {
+      "uk": "Фруктова серія",
+      "he": "סידרה פירות",
+      "ru": "Фруктовая серия",
+      "en": "Fruits series"
+    },
+    "technique": {
+      "uk": "Натюрморт 20x20 см. Акрил",
+      "he": "20x20 ס״מ. אקריליק",
+      "ru": "Натюрморт 20x20 см. Акрил",
+      "en": "Still life, 20x20 cm. Acrylic"
+    },
+    "createdAt": "2026-05-01",
+    "image": "assets/artworks/cherry/main.jpeg",
+    "pieces": [
+      "assets/artworks/cherry/pieces/01.jpg"
+    ]
+  },
+  {
+    "id": "annona",
+    "title": {
+      "uk": "анона",
+      "he": "אנונה",
+      "ru": "анона",
+      "en": "annona"
+    },
+    "description": {
+      "uk": "Фруктова серія",
+      "he": "סידרה פירות",
+      "ru": "Фруктовая серия",
+      "en": "Fruits series"
+    },
+    "technique": {
+      "uk": "Натюрморт 20x20 см. Акрил",
+      "he": "20x20 ס״מ. אקריליק",
+      "ru": "Натюрморт 20x20 см. Акрил",
+      "en": "Still life, 20x20 cm. Acrylic"
+    },
+    "createdAt": "2026-05-01",
+    "image": "assets/artworks/annona/main.jpeg",
+    "pieces": [
+      "assets/artworks/annona/pieces/01.jpg"
+    ]
+  },
+  {
+    "id": "pitahaya",
+    "title": {
+      "uk": "питахайя",
+      "he": "פיטהאיה",
+      "ru": "питахайя ",
+      "en": "pitahaya"
+    },
+    "description": {
+      "uk": "Фруктова серія",
+      "he": "סידרה פירות",
+      "ru": "Фруктовая серия",
+      "en": "Fruits series"
+    },
+    "technique": {
+      "uk": "Натюрморт 20x20 см. Акрил",
+      "he": "20x20 ס״מ. אקריליק",
+      "ru": "Натюрморт 20x20 см. Акрил",
+      "en": "Still life, 20x20 cm. Acrylic"
+    },
+    "createdAt": "2026-05-01",
+    "image": "assets/artworks/pitahaya/main.jpg",
+    "pieces": [
+      "assets/artworks/pitahaya/pieces/01.jpg"
+    ]
+  },
+  {
+    "id": "road",
+    "title": {
+      "uk": "дорога",
+      "he": "דרך",
+      "ru": "дорога",
+      "en": "road"
+    },
+    "description": {
+      "uk": "Мальовничий гірський пейзаж зі звивистою кам'яною стежкою, польовими квітами та вівцями на зеленій галявині.",
+      "he": "ציור נוף הררי פסטורלי עם שביל אבנים מפותל, פרחי בר צבעוניים וכבשים הרועות באחו ירוק.",
+      "ru": "Живописный горный пейзаж с извилистой каменной тропой, полевыми цветами и овечками на зеленом лугу.",
+      "en": "A peaceful mountain landscape featuring a winding stone path, blooming wildflowers, and sheep grazing in a green meadow."
+    },
+    "technique": {
+      "uk": "пейзаж 40x60 см. Акрил",
+      "he": "40x60 ס״מ. אקריליק",
+      "ru": "пейзаж 40x60 см. Акрил",
+      "en": "landscape, 40x60 cm. Acrylic"
+    },
+    "createdAt": "2026-02-01",
+    "image": "assets/artworks/road/main.jpeg",
+    "history": [
+      "assets/artworks/road/history/01.jpeg",
+      "assets/artworks/road/history/02.jpeg",
+      "assets/artworks/road/history/03.jpeg",
+      "assets/artworks/road/history/04.jpeg"
+    ]
+  },
+  {
+    "id": "meadow-serenity",
+    "title": {
+      "uk": "Затишок біля річки",
+      "he": "שלווה על המים",
+      "ru": "Опушка у реки",
+      "en": "meadow serenity"
+    },
+    "description": {
+      "uk": "Затишний дерев'яний будиночок серед квітучих ромашок біля спокійної річки.",
+      "he": "בקתת עץ ציורית מוקפת בפרחי קמומיל ליד נהר רגוע.",
+      "ru": "Уютный деревянный домик среди цветущих ромашек у спокойной реки.",
+      "en": "Cozy wooden cabin surrounded by blooming daisies near a calm river."
+    },
+    "technique": {
+      "uk": "пейзаж 40x60 см. Акрил",
+      "he": "40x60 ס״מ. אקריליק",
+      "ru": "пейзаж 40x60 см. Акрил",
+      "en": "landscape, 40x60 cm. Acrylic"
+    },
+    "createdAt": "2026-02-01",
+    "image": "assets/artworks/meadow-serenity/main.jpg"
+  },
+  {
+    "id": "courtyard",
+    "title": {
+      "uk": "дорога",
+      "he": "חצר ים תיכונית",
+      "ru": "Греческий дворик",
+      "en": "courtyard"
+    },
+    "description": {
+      "uk": "Середземноморський затишок",
+      "he": "חצר לבנה שטופת שמש עם דלת כחולה ופרחים פורחים.",
+      "ru": "Солнечный белый дворик с синей дверью и цветущей бугенвиллеей.",
+      "en": "Sun-drenched white courtyard with blue door and pink blooming flowers."
+    },
+    "technique": {
+      "uk": "пейзаж 40x60 см. Акрил",
+      "he": "40x60 ס״מ. אקריליק",
+      "ru": "пейзаж 40x60 см. Акрил",
+      "en": "landscape, 40x60 cm. Acrylic"
+    },
+    "createdAt": "2026-02-01",
+    "image": "assets/artworks/courtyard/main.jpeg",
+    "pieces": [
+      "assets/artworks/courtyard/pieces/01.jpg"
+    ]
+  },
+  {
+    "id": "sunset",
+    "title": {
+      "uk": "Морський захід сонця",
+      "he": "שלווה מול השקיעה",
+      "ru": "Морской рассвет",
+      "en": "sunset"
+    },
+    "description": {
+      "uk": "Спокійний морський захід, вітрильник, чашка кави та рожеві квіти.",
+      "he": "שקיעה שלווה בים עם סירת מפרש, קפה ופרחים ורודים.",
+      "ru": "Спокойный морской закат, парусник, чашка кофе и розовые цветы.",
+      "en": "Serene sunset seascape with sailboat, morning coffee, and pink flowers."
+    },
+    "technique": {
+      "uk": "пейзаж 40x60 см. Акрил",
+      "he": "40x60 ס״מ. אקריליק",
+      "ru": "пейзаж 40x60 см. Акрил",
+      "en": "landscape, 40x60 cm. Acrylic"
+    },
+    "createdAt": "2026-02-01",
+    "image": "assets/artworks/sunset/main.jpg",
+    "pieces": [
+      "assets/artworks/sunset/pieces/01.jpg"
+    ],
+	"history": [
+      "assets/artworks/sunset/history/01.jpg"
+   
+    ]
+  },
+  {
+    "id": "cactus",
+    "title": {
+      "uk": "кактус",
+      "he": "קַקטוּס",
+      "ru": "кактус",
+      "en": "cactus"
+    },
+     "description": {
+      "uk": "Фруктова серія",
+      "he": "סידרה פירות",
+      "ru": "Фруктовая серия",
+      "en": "Fruits series"
+    },
+    "technique": {
+      "uk": "Натюрморт 20x20 см. Акрил",
+      "he": "20x20 ס״מ. אקריליק",
+      "ru": "Натюрморт 20x20 см. Акрил",
+      "en": "Still life, 20x20 cm. Acrylic"
+    },
+    "createdAt": "2026-09-01",
+    "image": "assets/artworks/cactus/main.jpeg",
+    "history": [
+      "assets/artworks/cactus/history/01.jpeg",
+      "assets/artworks/cactus/history/02.jpeg",
+      "assets/artworks/cactus/history/03.jpeg",
+      "assets/artworks/cactus/history/04.jpeg"
+    ]
+  },
+  {
+    "id": "pineapple",
+    "title": {
+      "uk": "дорога",
+      "he": "דרך",
+      "ru": "дорога",
+      "en": "pineapple"
+    },
+    "description": {
+      "uk": "Фруктова серія",
+      "he": "סידרה פירות",
+      "ru": "Фруктовая серия",
+      "en": "Fruits series"
+    },
+    "technique": {
+      "uk": "Натюрморт 20x20 см. Акрил",
+      "he": "20x20 ס״מ. אקריליק",
+      "ru": "Натюрморт 20x20 см. Акрил",
+      "en": "Still life, 20x20 cm. Acrylic"
+    },
+    "createdAt": "2026-08-01",
+    "image": "assets/artworks/pineapple/main.jpeg",
+    "history": [
+      "assets/artworks/pineapple/history/01.jpeg",
+      "assets/artworks/pineapple/history/02.jpeg",
+      "assets/artworks/pineapple/history/03.jpeg",
+      "assets/artworks/pineapple/history/04.jpeg",
+      "assets/artworks/pineapple/history/05.jpeg",
+      "assets/artworks/pineapple/history/06.jpeg",
+      "assets/artworks/pineapple/history/07.jpeg"
+    ]
+  },
+  {
+    "id": "tree",
+    "title": {
+      "uk": "Віковий оберіг",
+      "he": "השומר העתיק",
+      "ru": "Древний страж",
+      "en": "The Ancient Guardian"
+    },
+    "description": {
+      "uk": "Старезний дуб у національному парку Хуршат Таль оживає навесні над яскравим килимом з анемонів.",
+      "he": "אלון עתיק בגן לאומי חורשת טל מתעורר לחיים באביב מעל מרבד כלניות צבעוניות.",
+      "ru": "Древний дуб в национальном парке Хуршат Таль оживает весной над ярким ковром из анемонов.",
+      "en": "An ancient oak in Hurshat Tal National Park wakes up in spring above a vibrant carpet of anemones."
+    },
+    "technique": {
+      "uk": "Воскова крейда на папері",
+      "he": "צבעי פנדה",
+      "ru": "Восковые мелки на бумаге",
+      "en": "Wax crayons on paper"
+    },
+    "createdAt": "2026-02-01",
+    "image": "assets/artworks/tree/main.jpeg"
   }
 ]
