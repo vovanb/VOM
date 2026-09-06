@@ -1,10 +1,10 @@
 {
   "siteUrl": "https://example.github.io/VOM/",
   "artistName": {
-    "uk": "Ім'я художниці",
-    "he": "שם האמנית",
-    "ru": "Имя художницы",
-    "en": "Artist name"
+    "uk": "Oxana B.",
+    "he": "Oxana B.",
+    "ru": "Oxana B.",
+    "en": "Oxana B."
   },
   "seo": {
     "title": {
@@ -253,7 +253,7 @@
         "ru": "Email",
         "en": "Email"
       },
-      "href": "mailto:artist@example.com",
+      "href": "mailto:vovanb@gmail.com",
       "icon": "email"
     },
     {
