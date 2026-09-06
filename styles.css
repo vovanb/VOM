@@ -780,6 +780,10 @@ body[dir="rtl"] .history-track figure {
     max-width: calc(100vw - 96px);
   }
 
+  .hero-image {
+    display: none;
+  }
+
   .hero,
   .section,
   .topbar,
