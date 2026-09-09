@@ -7,6 +7,7 @@ let artworks = [];
 let currentLang = DEFAULT_LANG;
 let historyAutoScrollTimer = null;
 let historyFrameTimer = null;
+let activeArtworkTrigger = null;
 
 const nodes = {
   gallery: document.querySelector("[data-gallery]"),
@@ -269,6 +270,8 @@ function closeArtwork() {
   url.searchParams.delete("artwork");
   url.searchParams.delete("history");
   history.replaceState(null, "", url);
+  activeArtworkTrigger?.focus({ preventScroll: true });
+  activeArtworkTrigger = null;
 }
 
 function setupHistoryControls() {
@@ -439,6 +442,15 @@ async function init() {
   });
 
   setLanguage(initialLanguage);
+  nodes.gallery.addEventListener("click", (event) => {
+    const trigger = event.target.closest("[data-artwork-id], [data-history-id]");
+    if (!trigger) return;
+    event.preventDefault();
+    activeArtworkTrigger = trigger;
+    openArtwork(trigger.dataset.artworkId || trigger.dataset.historyId, {
+      focusHistory: Boolean(trigger.dataset.historyId)
+    });
+  });
   const params = new URLSearchParams(window.location.search);
   const artworkFromUrl = params.get("artwork");
   if (artworkFromUrl) openArtwork(artworkFromUrl, { fromUrl: true, focusHistory: params.get("history") === "1" });

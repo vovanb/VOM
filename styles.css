@@ -291,7 +291,8 @@ h3 {
 .hero-image {
   width: 100%;
   aspect-ratio: 4 / 5;
-  object-fit: cover;
+  object-fit: contain;
+  background: #fff;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
@@ -339,8 +340,8 @@ h3 {
 .art-card img {
   width: 100%;
   aspect-ratio: 4 / 3;
-  object-fit: cover;
-  background: var(--surface-soft);
+  object-fit: contain;
+  background: #fff;
 }
 
 .art-card-body {
@@ -493,9 +494,9 @@ body[dir="rtl"] .dialog-close {
 .detail-image {
   width: 100%;
   aspect-ratio: 4 / 5;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: var(--radius);
-  background: var(--surface-soft);
+  background: #fff;
 }
 
 .detail-copy p {
@@ -560,9 +561,9 @@ body[dir="rtl"] .detail-list div {
 .pieces-grid img {
   width: 100%;
   aspect-ratio: 3 / 5;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: var(--radius);
-  background: var(--surface-soft);
+  background: #fff;
 }
 
 .pieces-grid figcaption {
@@ -690,9 +691,9 @@ body[dir="rtl"] .history-track figure {
 .history-track img {
   width: 100%;
   aspect-ratio: 4 / 3;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: var(--radius);
-  background: var(--surface-soft);
+  background: #fff;
 }
 
 .history-track figcaption {
@@ -809,8 +810,12 @@ body[dir="rtl"] .history-track figure {
   }
 
   .art-dialog {
-    width: calc(100% - 12px);
-    max-height: calc(100dvh - 12px);
+    width: 100%;
+    max-width: none;
+    height: 100dvh;
+    max-height: 100dvh;
+    margin: 0;
+    border-radius: 0;
   }
 
   .art-detail {

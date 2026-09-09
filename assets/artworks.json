@@ -460,7 +460,8 @@
       "assets/artworks/cactus/history/01.jpeg",
       "assets/artworks/cactus/history/02.jpeg",
       "assets/artworks/cactus/history/03.jpeg",
-      "assets/artworks/cactus/history/04.jpeg"
+      "assets/artworks/cactus/history/04.jpeg",
+      "assets/artworks/cactus/history/05.jpeg"
     ]
   },
   {
@@ -517,5 +518,92 @@
     },
     "createdAt": "2026-02-01",
     "image": "assets/artworks/tree/main.jpeg"
+  },
+  {
+    "id": "lastdrop",
+    "title": {
+      "uk": "Остання крапля",
+      "he": "הטיפה האחרונה",
+      "ru": "Последняя капля",
+      "en": "The Last Drop"
+    },
+     "description": {
+      "uk": "",
+      "he": "",
+      "ru": "",
+      "en": ""
+    },
+    "technique": {
+      "uk": "Натюрморт 24x30 см. Акрил",
+      "he": "24x30 ס״מ. אקריליק",
+      "ru": "Натюрморт 24x30 см. Акрил",
+      "en": "Still life, 24x30 cm. Acrylic"
+    },
+    "createdAt": "2026-09-01",
+    "image": "assets/artworks/lastdrop/main.jpeg",
+    "history": [
+      "assets/artworks/lastdrop/history/01.jpeg",
+      "assets/artworks/lastdrop/history/02.jpeg",
+      "assets/artworks/lastdrop/history/03.jpeg",
+      "assets/artworks/lastdrop/history/04.jpeg",
+      "assets/artworks/lastdrop/history/05.jpeg",
+      "assets/artworks/lastdrop/history/06.jpeg",
+      "assets/artworks/lastdrop/history/07.jpeg",
+      "assets/artworks/lastdrop/history/08.jpeg",
+      "assets/artworks/lastdrop/history/09.jpeg",
+      "assets/artworks/lastdrop/history/10.jpeg"
+    ]
+  },
+  {
+    "id": "lemon",
+    "title": {
+      "uk": "лимон",
+      "he": "לִימוֹן",
+      "ru": "лимон",
+      "en": "lemon"
+    },
+     "description": {
+      "uk": "Фруктова серія",
+      "he": "סידרה פירות",
+      "ru": "Фруктовая серия",
+      "en": "Fruits series"
+    },
+    "technique": {
+      "uk": "Натюрморт 20x20 см. Акрил",
+      "he": "20x20 ס״מ. אקריליק",
+      "ru": "Натюрморт 20x20 см. Акрил",
+      "en": "Still life, 20x20 cm. Acrylic"
+    },
+    "createdAt": "2025-11-01",
+    "image": "assets/artworks/lemon/main.jpeg",
+      "pieces": [
+      "assets/artworks/lemon/pieces/01.jpeg"
+    ]
+  },
+  {
+    "id": "pomegranate",
+    "title": {
+      "uk": "гранат",
+      "he": "רימון",
+      "ru": "гранат",
+      "en": "pomegranate"
+    },
+     "description": {
+      "uk": "Фруктова серія",
+      "he": "סידרה פירות",
+      "ru": "Фруктовая серия",
+      "en": "Fruits series"
+    },
+    "technique": {
+      "uk": "Натюрморт 20x20 см. Акрил",
+      "he": "20x20 ס״מ. אקריליק",
+      "ru": "Натюрморт 20x20 см. Акрил",
+      "en": "Still life, 20x20 cm. Acrylic"
+    },
+    "createdAt": "2025-11-01",
+    "image": "assets/artworks/pomegranate/main.jpeg",
+      "pieces": [
+      "assets/artworks/pomegranate/pieces/01.jpeg"
+    ]
   }
 ]
