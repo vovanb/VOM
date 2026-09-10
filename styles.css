@@ -836,10 +836,14 @@ body[dir="rtl"] .history-track figure {
   }
 
   .art-dialog {
+    position: fixed;
+    inset: 0;
     width: 100%;
     max-width: none;
     height: 100dvh;
     max-height: 100dvh;
+    overflow-y: auto;
+    overscroll-behavior: contain;
     margin: 0;
     border-radius: 0;
   }

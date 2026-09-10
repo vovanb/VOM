@@ -96,15 +96,16 @@ function renderGallery() {
   artworks.forEach((artwork) => {
     const card = document.createElement("article");
     card.className = "art-card";
+    const description = translate(artwork.description);
     const price = artworkPrice(artwork) ? `<span class="pill">${escapeHtml(artworkPrice(artwork))}</span>` : "";
     const history = Array.isArray(artwork.history) && artwork.history.length;
     card.innerHTML = `
       <a class="art-image-button" href="${escapeAttribute(artworkUrl(artwork.id))}" data-artwork-id="${escapeHtml(artwork.id)}">
         <img src="${escapeAttribute(artwork.image)}" alt="${escapeAttribute(translate(artwork.title))}" loading="lazy">
       </a>
-      <div class="art-card-body">
-        <h3>${escapeHtml(translate(artwork.title))}</h3>
-        <p>${escapeHtml(translate(artwork.description))}</p>
+        <div class="art-card-body">
+          <h3>${escapeHtml(translate(artwork.title))}</h3>
+        ${description ? `<p>${escapeHtml(description)}</p>` : ""}
         <div class="meta-row">
           <span class="pill">${escapeHtml(translate(artwork.technique))}</span>
           ${artwork.createdAt ? `<span class="pill">${escapeHtml(formatArtworkDate(artwork))}</span>` : ""}
@@ -215,6 +216,7 @@ function openArtwork(id, options = {}) {
   const dateBlock = artwork.createdAt
     ? `<div><dt>${escapeHtml(text("dateLabel"))}</dt><dd>${escapeHtml(formatArtworkDate(artwork))}</dd></div>`
     : "";
+  const description = translate(artwork.description);
   const pieces = Array.isArray(artwork.pieces) ? artwork.pieces : [];
   const piecesBlock = pieces.length
     ? `
@@ -265,7 +267,7 @@ function openArtwork(id, options = {}) {
       <div class="detail-copy">
         <p class="eyebrow">${escapeHtml(text("artworkEyebrow"))}</p>
         <h2 id="dialog-title">${escapeHtml(translate(artwork.title))}</h2>
-        <p>${escapeHtml(translate(artwork.description))}</p>
+        ${description ? `<p>${escapeHtml(description)}</p>` : ""}
         <dl class="detail-list">
           <div><dt>${escapeHtml(text("techniqueLabel"))}</dt><dd>${escapeHtml(translate(artwork.technique))}</dd></div>
           ${dateBlock}
@@ -293,6 +295,11 @@ function openArtwork(id, options = {}) {
     nodes.dialog.setAttribute("open", "");
   }
   nodes.dialog.scrollTop = 0;
+  nodes.artDetail.scrollTop = 0;
+  window.requestAnimationFrame(() => {
+    nodes.dialog.scrollTo({ top: 0, left: 0, behavior: "auto" });
+    nodes.artDetail.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  });
   if (options.focusHistory) {
     window.setTimeout(scrollDialogToHistory, 120);
   }
