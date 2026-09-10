@@ -18,6 +18,7 @@ const nodes = {
   navToggle: document.querySelector("[data-nav-toggle]"),
   navPanel: document.querySelector("[data-nav-panel]"),
   dialog: document.querySelector("[data-art-dialog]"),
+  dialogTopActions: document.querySelector("[data-dialog-top-actions]"),
   dialogClose: document.querySelector("[data-dialog-close]"),
   artDetail: document.querySelector("[data-art-detail]")
 };
@@ -270,23 +271,21 @@ function openArtwork(id, options = {}) {
           ${dateBlock}
           ${priceBlock}
         </dl>
-        <div class="detail-actions">
-          <a class="button primary" href="#contact" data-dialog-contact>${escapeHtml(text("contactAboutArtwork"))}</a>
-          <button class="final-icon-button final-share" type="button" data-share-artwork aria-label="${escapeAttribute(text("shareArtwork"))}">
-            ${iconSvg("share")}
-          </button>
-          <a class="final-icon-button final-whatsapp" href="${escapeAttribute(whatsappShareUrl(artwork))}" target="_blank" rel="noopener noreferrer" aria-label="${escapeAttribute(text("shareWhatsapp"))}">
-            ${iconSvg("whatsapp")}
-          </a>
-        </div>
       </div>
     </div>
     ${piecesBlock}
     ${historyBlock}
   `;
 
-  nodes.artDetail.querySelector("[data-dialog-contact]")?.addEventListener("click", closeArtwork);
-  nodes.artDetail.querySelector("[data-share-artwork]")?.addEventListener("click", (event) => shareArtwork(artwork, event.currentTarget));
+  nodes.dialogTopActions.innerHTML = `
+    <button class="final-icon-button final-share" type="button" data-share-artwork aria-label="${escapeAttribute(text("shareArtwork"))}">
+      ${iconSvg("share")}
+    </button>
+    <a class="final-icon-button final-whatsapp" href="${escapeAttribute(whatsappShareUrl(artwork))}" target="_blank" rel="noopener noreferrer" aria-label="${escapeAttribute(text("shareWhatsapp"))}">
+      ${iconSvg("whatsapp")}
+    </a>
+  `;
+  nodes.dialogTopActions.querySelector("[data-share-artwork]")?.addEventListener("click", (event) => shareArtwork(artwork, event.currentTarget));
   setupHistoryControls();
   if (typeof nodes.dialog.showModal === "function") {
     nodes.dialog.showModal();

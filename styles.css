@@ -453,6 +453,7 @@ h3 {
 }
 
 .art-dialog {
+  position: relative;
   width: min(1080px, calc(100% - 24px));
   max-height: calc(100dvh - 24px);
   padding: 0;
@@ -467,13 +468,25 @@ h3 {
   background: rgba(11, 31, 37, 0.62);
 }
 
-.dialog-close {
+.dialog-header {
   position: sticky;
-  top: 0.75rem;
-  inset-inline-start: calc(100% - 3.25rem);
-  z-index: 2;
+  top: 0;
+  z-index: 4;
+  height: 52px;
+  background: #fff;
+}
+
+.dialog-close,
+.dialog-top-actions {
   width: 42px;
   height: 42px;
+  position: absolute;
+  top: 0.5rem;
+}
+
+.dialog-close {
+  inset-inline-end: 0.75rem;
+  padding: 0;
   border: 0;
   border-radius: 0;
   background: transparent;
@@ -484,8 +497,13 @@ h3 {
   cursor: pointer;
 }
 
-body[dir="rtl"] .dialog-close {
-  inset-inline-start: 0.75rem;
+.dialog-top-actions {
+  inset-inline-end: 3.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+  width: auto;
+  height: 42px;
 }
 
 .art-detail {
