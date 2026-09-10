@@ -292,6 +292,7 @@ function openArtwork(id, options = {}) {
   } else {
     nodes.dialog.setAttribute("open", "");
   }
+  nodes.dialog.scrollTop = 0;
   if (options.focusHistory) {
     window.setTimeout(scrollDialogToHistory, 120);
   }
