@@ -163,6 +163,38 @@ function whatsappShareUrl(artwork) {
   return `https://wa.me/?text=${encodeURIComponent(message)}`;
 }
 
+async function shareArtwork(artwork, button) {
+  const url = artworkUrl(artwork.id);
+  const title = translate(artwork.title);
+  const shareData = { title, text: `${text("shareMessage")} ${title}`, url };
+
+  try {
+    if (navigator.share) {
+      await navigator.share(shareData);
+      return;
+    }
+    await navigator.clipboard.writeText(url);
+  } catch (error) {
+    if (error.name === "AbortError") return;
+    const fallback = document.createElement("textarea");
+    fallback.value = url;
+    fallback.setAttribute("readonly", "");
+    fallback.style.position = "fixed";
+    fallback.style.opacity = "0";
+    document.body.append(fallback);
+    fallback.select();
+    document.execCommand("copy");
+    fallback.remove();
+  }
+
+  button.setAttribute("aria-label", text("linkCopied"));
+  button.classList.add("is-copied");
+  window.setTimeout(() => {
+    button.setAttribute("aria-label", text("shareArtwork"));
+    button.classList.remove("is-copied");
+  }, 1800);
+}
+
 function openArtwork(id, options = {}) {
   const artwork = artworks.find((item) => item.id === id);
   if (!artwork) return;
@@ -240,6 +272,9 @@ function openArtwork(id, options = {}) {
         </dl>
         <div class="detail-actions">
           <a class="button primary" href="#contact" data-dialog-contact>${escapeHtml(text("contactAboutArtwork"))}</a>
+          <button class="final-icon-button final-share" type="button" data-share-artwork aria-label="${escapeAttribute(text("shareArtwork"))}">
+            ${iconSvg("share")}
+          </button>
           <a class="final-icon-button final-whatsapp" href="${escapeAttribute(whatsappShareUrl(artwork))}" target="_blank" rel="noopener noreferrer" aria-label="${escapeAttribute(text("shareWhatsapp"))}">
             ${iconSvg("whatsapp")}
           </a>
@@ -251,6 +286,7 @@ function openArtwork(id, options = {}) {
   `;
 
   nodes.artDetail.querySelector("[data-dialog-contact]")?.addEventListener("click", closeArtwork);
+  nodes.artDetail.querySelector("[data-share-artwork]")?.addEventListener("click", (event) => shareArtwork(artwork, event.currentTarget));
   setupHistoryControls();
   if (typeof nodes.dialog.showModal === "function") {
     nodes.dialog.showModal();
@@ -388,6 +424,13 @@ function iconSvg(icon) {
     return `
       <svg class="whatsapp-icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
         <path d="M16 3.2A12.6 12.6 0 0 0 5.2 22.3L3.8 28l5.9-1.5A12.6 12.6 0 1 0 16 3.2Zm0 2.4a10.2 10.2 0 0 1 8.7 15.5 10.2 10.2 0 0 1-13.8 3.4l-.4-.2-3.2.8.8-3.1-.3-.5A10.2 10.2 0 0 1 16 5.6Zm-4.1 5.4c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.8 2.9 4.5 3.9 2.2.9 2.7.7 3.2.6.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.1.1-1.3-.1-.1-.2-.2-.5-.4l-1.8-.9c-.3-.1-.5-.2-.7.2-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.5-1.8-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-1.9c-.2-.5-.4-.5-.7-.5h-.4Z"></path>
+      </svg>
+    `;
+  }
+  if (icon === "share") {
+    return `
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M18 16.1c-.8 0-1.5.3-2.1.8L8.9 13a3.1 3.1 0 0 0 0-2l7-3.9A3 3 0 1 0 15 5c0 .3 0 .6.1.9l-7 3.9a3 3 0 1 0 0 4.4l7 3.9A3 3 0 1 0 18 16.1ZM18 3.8a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4ZM6 13.2a1.2 1.2 0 1 1 0-2.4 1.2 1.2 0 0 1 0 2.4Zm12 5.8a1.2 1.2 0 1 1 0-2.4 1.2 1.2 0 0 1 0 2.4Z"></path>
       </svg>
     `;
   }

@@ -283,6 +283,14 @@ h3 {
   color: var(--blue);
 }
 
+.final-share {
+  color: var(--teal);
+}
+
+.final-share.is-copied {
+  color: var(--blue);
+}
+
 .final-icon-button:hover svg,
 .final-icon-button:focus svg {
   transform: scale(1.07);
