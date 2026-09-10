@@ -468,25 +468,13 @@ h3 {
   background: rgba(11, 31, 37, 0.62);
 }
 
-.dialog-header {
+.dialog-close {
   position: sticky;
-  top: 0;
-  z-index: 4;
-  height: 52px;
-  background: #fff;
-}
-
-.dialog-close,
-.dialog-top-actions {
+  top: 0.75rem;
+  inset-inline-start: calc(100% - 3.25rem);
+  z-index: 2;
   width: 42px;
   height: 42px;
-  position: absolute;
-  top: 0.5rem;
-}
-
-.dialog-close {
-  inset-inline-end: 0.75rem;
-  padding: 0;
   border: 0;
   border-radius: 0;
   background: transparent;
@@ -497,8 +485,15 @@ h3 {
   cursor: pointer;
 }
 
+body[dir="rtl"] .dialog-close {
+  inset-inline-start: 0.75rem;
+}
+
 .dialog-top-actions {
+  position: absolute;
+  top: 0.75rem;
   inset-inline-end: 3.75rem;
+  z-index: 2;
   display: flex;
   align-items: center;
   gap: 0.15rem;
