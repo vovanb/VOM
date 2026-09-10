@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://example.github.io/VOM/sitemap.xml
+Sitemap: https://vom.momm.app/sitemap.xml

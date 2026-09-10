@@ -27,7 +27,7 @@ The admin editor writes images into `assets/artworks/<artwork-id>/` and updates 
 
 ## Publish checklist
 
-1. Replace `https://example.github.io/VOM/` in `index.html`, `assets/site.json`, `robots.txt`, and `sitemap.xml` with the real GitHub Pages URL.
+1. The public site URL is configured as `https://vom.momm.app/` in `index.html`, `assets/site.json`, `robots.txt`, and `sitemap.xml`.
 2. Replace `artist@example.com`, the WhatsApp number, and Instagram URL in `assets/site.json`.
 3. Commit and push to GitHub.
 4. Enable GitHub Pages for the repository root.
