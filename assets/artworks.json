@@ -439,13 +439,13 @@
     "title": {
       "uk": "кактус",
       "he": "קַקטוּס",
-      "ru": "кактус",
+      "ru": "Притяжение контрастов",
       "en": "cactus"
     },
      "description": {
       "uk": "Фруктова серія",
       "he": "סידרה פירות",
-      "ru": "Фруктовая серия",
+      "ru": "Зеленый кактус опунция с яркими розовато-фиолетовыми плодами на фоне голубого неба. Справа подлетает небольшая бабочка",
       "en": "Fruits series"
     },
     "technique": {
@@ -604,6 +604,38 @@
     "image": "assets/artworks/pomegranate/main.jpeg",
       "pieces": [
       "assets/artworks/pomegranate/pieces/01.jpeg"
+    ]
+  },
+  {
+    "id": "siesta",
+    "title": {
+      "uk": "Літня сієста",
+      "he": "סיאסטת קיץ",
+      "ru": "Летняя сиеста",
+      "en": "Summer siesta"
+    },
+     "description": {
+      "uk": "Фруктова серія",
+      "he": "סידרה פירות",
+      "ru": "Фруктовая серия",
+      "en": "Fruits series"
+    },
+    "technique": {
+      "uk": "Натюрморт 25x25 см. Акрил",
+      "he": "25x25 ס״מ. אקריליק",
+      "ru": "Натюрморт 25x25 см. Акрил",
+      "en": "Still life, 25x25 cm. Acrylic"
+    },
+    "createdAt": "2026-09-20",
+    "image": "assets/artworks/ciesta/main.jpeg",
+    "history": [
+      "assets/artworks/siesta/history/01.jpeg",
+      "assets/artworks/siesta/history/02.jpeg",
+      "assets/artworks/siesta/history/03.jpeg",
+      "assets/artworks/siesta/history/04.jpeg",
+      "assets/artworks/siesta/history/05.jpeg",
+      "assets/artworks/siesta/history/06.jpeg",
+      "assets/artworks/siesta/history/07.jpeg"
     ]
   }
 ]
